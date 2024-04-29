@@ -19,11 +19,11 @@ function table_of_contents() {
     ?>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-        var tocBox = document.getElementById("tocBox");
-        var tocBoxMobile = document.getElementById("tocBoxMobile");
+        var tocBox = document.querySelector(".scStickyContentTable");
+        var tocBoxMobile = document.querySelector(".scStickyContentTableMobile");
 
         function updateTableOfContents() {
-            var headerTags = document.querySelectorAll("h2, h3"); // Change these to edit the tags you want in the sidebar 
+            var headerTags = document.querySelectorAll("h2, h3");
             var table = document.createElement("table");
 
             headerTags.forEach(function(header) {
@@ -51,7 +51,6 @@ function table_of_contents() {
 
         // TranslatePress query
         function hasTranslationCompleted() {
-            
             return document.querySelector('html').lang !== 'en' || document.querySelectorAll("[data-translatepress]").length > 0;
         }
 
@@ -64,7 +63,7 @@ function table_of_contents() {
             }
         }
 
-        waitForTranslation(); 
+        waitForTranslation();
     });
     </script>
     <?php
