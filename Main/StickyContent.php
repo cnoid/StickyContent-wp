@@ -24,9 +24,7 @@ function table_of_contents() {
         var table = document.createElement("table");
 
         headerTags.forEach(function(header) {
-
             if (header.innerText !== "Elements to copy:") {
-
                 var row = document.createElement("tr");
                 var cell = document.createElement("td");
 
@@ -40,12 +38,16 @@ function table_of_contents() {
             }
         });
 
-        var tocBox = document.getElementById("tocBox");
-        var tocBoxMobile = document.getElementById("tocBoxMobile");
+        var tocBoxes = document.querySelectorAll(".scStickyContentTable");
+        var tocBoxesMobile = document.querySelectorAll(".scStickyContentTableMobile");
 
-        tocBox.appendChild(table.cloneNode(true));
+        tocBoxes.forEach(function(tocBox) {
+            tocBox.appendChild(table.cloneNode(true));
+        });
 
-        tocBoxMobile.appendChild(table.cloneNode(true));
+        tocBoxesMobile.forEach(function(tocBoxMobile) {
+            tocBoxMobile.appendChild(table.cloneNode(true));
+        });
     }
     </script>
     <?php
