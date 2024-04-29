@@ -49,7 +49,7 @@ function table_of_contents() {
             }
         }
 
-        // TranslatePress integration
+        // TranslatePress query
         function hasTranslationCompleted() {
             
             return document.querySelector('html').lang !== 'en' || document.querySelectorAll("[data-translatepress]").length > 0;
