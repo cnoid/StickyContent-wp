@@ -1,47 +1,48 @@
 /*Change items into what you prefer, add items as well in normal CSS fashion. Item should be tocBox */
-#tocBox a::before {
-    content: "→ ";
+.scStickyContentTable a::before {
+    content: "- ";
     color: #FF3254;
 }
 
-#tocBox a {
+.scStickyContentTable a {
     color: #FFF;
     text-decoration: none;
 }
 
-#tocBox a:hover {
+.scStickyContentTable a:hover {
     color: #FF3254;
 	  font-weight: bold;
 }
 
-#tocBoxContent img {  
-	max-width: 100%;
-  height: auto;
+.scStickyContentTable table,
+.scStickyContentTable tr,
+.scStickyContentTable td {
+  border: none;
 }
 
-/* Hide Mobile Content list by default */
-#tocBoxMobile {
+/* Hide tocBoxMobile by default */
+.scStickyContentTableMobile {
     display: none;
 }
 
-/* Mobile style below */
+/* Show tocBoxMobile for viewports up to 768px width (usually includes mobile and tablet devices) */
 @media screen and (max-width: 768px) {
-    #tocBoxMobile {
+    .scStickyContentTableMobile {
         display: block;
     }
 
-    #tocBoxMobile a::before {
-        content: "→ ";
+    .scStickyContentTableMobile a::before {
+        content: "- ";
         color: #FF3254;
     }
 
-    #tocBoxMobile a {
+    .scStickyContentTableMobile a {
         font-weight: bold;
         color: #FFF;
         text-decoration: none;
     }
 
-    #tocBoxMobile a:hover {
+    .scStickyContentTableMobile a:hover {
         color: #FF3254;
     }
 }
