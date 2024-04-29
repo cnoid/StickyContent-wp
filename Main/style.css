@@ -1,0 +1,47 @@
+/*Change items into what you prefer, add items as well in normal CSS fashion. Item should be tocBox */
+#tocBox a::before {
+    content: "→ ";
+    color: #FF3254;
+}
+
+#tocBox a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#tocBox a:hover {
+    color: #FF3254;
+	  font-weight: bold;
+}
+
+#tocBoxContent img {  
+	max-width: 100%;
+  height: auto;
+}
+
+/* Hide Mobile Content list by default */
+#tocBoxMobile {
+    display: none;
+}
+
+/* Mobile style below */
+@media screen and (max-width: 768px) {
+    #tocBoxMobile {
+        display: block;
+    }
+
+    #tocBoxMobile a::before {
+        content: "→ ";
+        color: #FF3254;
+    }
+
+    #tocBoxMobile a {
+        font-weight: bold;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    #tocBoxMobile a:hover {
+        color: #FF3254;
+    }
+}
