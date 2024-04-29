@@ -19,7 +19,7 @@ function table_of_contents() {
     ?>
     <script>
     window.onload = function() {
-        var headerTags = document.querySelectorAll("h2, h3");
+        var headerTags = document.querySelectorAll("h2, h3"); // Change these to edit the tags you want in the sidebar
 
         var table = document.createElement("table");
 
