@@ -3,7 +3,7 @@
 * Plugin Name: StickyContent
 * Plugin URI: https://github.com/cnoid/StickyContent-wp
 * Description: Creates a Sticky Table of Content for pages. See the README on Plugin page for information. Modified for TranslatePress.
-* Version: 0.6-TrPs
+* Version: 0.6.1-TrPs
 * Author: Eivind G.
 * Author URI: https://github.com/cnoid
 * License: GPLv3
