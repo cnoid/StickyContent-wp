@@ -23,7 +23,7 @@ function table_of_contents() {
         var tocBoxMobile = document.getElementById("tocBoxMobile");
 
         function updateTableOfContents() {
-            var headerTags = document.querySelectorAll("h2, h3");
+            var headerTags = document.querySelectorAll("h2, h3"); // Change these to edit the tags you want in the sidebar 
             var table = document.createElement("table");
 
             headerTags.forEach(function(header) {
